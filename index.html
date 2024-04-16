@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>6033</title> <!-- Título de la página -->
+</head>
+<body>
+
+<h1>Sumador de Números</h1> <!-- Encabezado principal -->
+
+<label for="num1">Número 1:</label> <!-- Etiqueta para el primer número -->
+<input type="number" id="num1"> <!-- Entrada para el primer número -->
+
+<label for="num2">Número 2:</label> <!-- Etiqueta para el segundo número -->
+<input type="number" id="num2"> <!-- Entrada para el segundo número -->
+
+<button onclick="sumar()">Sumar</button> <!-- Botón que llama a la función sumar() -->
+
+<p id="resultado"></p> <!-- Párrafo donde se mostrará el resultado de la suma -->
+
+<script>
+function sumar() { // Función para sumar los números
+  var num1 = parseFloat(document.getElementById('num1').value); // Obtiene el valor del primer número y lo convierte a un número de punto flotante
+  var num2 = parseFloat(document.getElementById('num2').value); // Obtiene el valor del segundo número y lo convierte a un número de punto flotante
+
+  var resultado = num1 + num2; // Calcula la suma de los dos números
+
+  document.getElementById('resultado').innerText = "El resultado de la suma es: " + resultado; // Muestra el resultado de la suma en el elemento con el id 'resultado'
+}
+</script>
+
+</body>
+</html>
